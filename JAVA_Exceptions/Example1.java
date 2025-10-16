@@ -3,11 +3,18 @@ public class Example1 {
     public static void main(String[] args) {
         int a,b,c;
         System.out.println("exception");
-        a = 0;
-        b = 3;
-        c = (b/a);
-        System.out.println("exception 2");
+        try{
+        a = 180;
+        b = 0;
+        c = (a/b);
         System.out.println(c);
-
+        }
+        catch(ArithmeticException e){
+            System.out.println(e.getMessage());
+        }
+        finally{
+            System.out.println("finally Block");
+        }
+        System.out.println("exception 2");
     }
 }
