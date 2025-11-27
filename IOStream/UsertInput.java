@@ -10,5 +10,7 @@ public class UsertInput {
         scn.nextLine();
         System.out.println("Enter Second Number: ");
         scn.nextLine();
+
+        System.out.println("Sum: "+(scn.nextInt()+scn.nextInt()));
     }
 }

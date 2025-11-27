@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Inserting10MData">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Activity/Inserting10MData/commons-lang3-3.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Activity/Inserting10MData/snakeyaml-2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Activity/Inserting10MData/javafaker-1.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Activity/Inserting10MData/mysql-connector-j-9.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
