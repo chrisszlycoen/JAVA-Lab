@@ -1,0 +1,64 @@
+This set of exercises introduces Object-oriented programming concepts such as inheritance.
+Creation
+
+1. Simple inheritance
+Create a class A with a string property called message and a method called hello that prints that string to the console
+Create a class B which extends A
+Create a class Exercise01 with a main method
+In the main method, create instances of A and B, and call the hello method on both objects
+
+2. Overriding a method
+Override the hello method in B by declaring a hello method with the same name and return type (void)
+In the main method, assign an object of type B to a variable of type A, i.e. A c = new B();
+Call the hello method on that variable, and observe that it calls the hello method of B, even thought the variable is of class A
+
+3. Overriding a variable, and using super
+Override the message variable in class B
+In the hello method of class B, call super.hello()
+Run the program and observe that super.hello() calls the hello method of A
+
+4. Calling superclass constructors
+When an instance of a subclass such as B is created, the constructor of the superclass is called automatically. If we need to pass a parameter to the superclass constructor we can do that using the super keyword
+Modify class A's constructor so that it takes a string parameter, which is used to initialize the value of message
+Add a default constructor to class B, i.e. no parameters.
+Add the following to the start of the constructor: super("Hello from B");
+
+5. Inheritance family tree
+Create the following family tree of animals as classes which extend each other:
+Organism (has a default constructor which prints something to the console)
+Animal (has a string called sound, initialized by a constructor parameter, printed to console in a method called hello)
+Canine (has a constructor which takes a sound parameter and passes it to super(...))
+Dog
+Wolf
+Feline (has a constructor which takes a sound parameter and passes it to super(...))
+Lion
+Cat
+The Dog, Wolf, Lion and Cat subclasses should use super(...) to pass a parameter to the Animal constructor which is a string of the sound that animal makes. Create a program which has an array of those 4 animals, and using a for loop, call each of their hello methods.
+Solution: Exercise05.java
+
+6. Encapsulation
+Objects in Java should have protected data members which are accessed via getter and setter methods.
+Create a class called User with a String property called name and an int property called age
+Create getter and setter methods for each property
+Create a constructor which takes parameters for name and age
+Create a Java program which initializes 3 instances of User
+In its main method, print the name and age of each instance using its getter methods
+
+7. Overriding toString()
+The System.out.println(...) method has an overload which takes an Object, thus you can pass an instance of User directly to that method. However it will print something like oopintro.User@19821f which comes from the toString method of Object. This can be overridden though...
+Override toString in the User class to return a string containing the name and age of the user
+Modify the main method to print each instance of User directly
+
+8. Overriding equals(...)
+Using == to compare two objects only checks to see if the variables reference the same object in memory. If we want to compare the content of two objects we can override the equals method of Object to perform a comparison based on all of that classes data members.
+Override equals in the User class to return true only if the user's have the same name and age
+Create 3 instances of User called u1, u2, u3 where u1 and u3 have the same name and age
+In the main method, print to the console the result of:
+u1 == u3
+u1.equals(u3)
+u1.equals(u2)
+
+9. Overloading a constructor
+Create a class Box and give it properties width, height, depth of type integers.
+Create a class BoxWeight which has an additional property weight of the box.
+Create a main App class that helps to Create Object of the two classes.

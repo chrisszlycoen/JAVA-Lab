@@ -1,0 +1,5 @@
+01,Kigali
+02,Southern
+03,Western
+04,Northern
+05,Eastern

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Regex_Activity">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Activity/Regex_Activity/jsoup-1.21.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Activity/Regex_Activity/mysql-connector-j-9.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
